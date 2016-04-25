@@ -17,16 +17,16 @@ class BlueAcorn_AppTraining_Helper_Data extends Mage_Core_Helper_Abstract {
     {
         $pageTitle = Mage::getStoreConfig('blueacorn_apptraining/general/page_title');
         $pageTitleReturn = ($pageTitle === '' ? $this->getDefaultSettings('page_title') : $pageTitle );
-        return $pageTitle;
+        return $pageTitleReturn;
     }
 
     /**
      * @return mixed
-     * check enabled
+     * getStoreConfigFlag returns boolean to check if enabled
      */
     public function isEnabled()
     {
-        return Mage::getStoreConfig('blueacorn_apptraining/general/enabled');
+        return Mage::getStoreConfigFlag('blueacorn_apptraining/general/enabled');
     }
 
     /**
@@ -36,7 +36,6 @@ class BlueAcorn_AppTraining_Helper_Data extends Mage_Core_Helper_Abstract {
     public function getCustomerName() {
         if(Mage::getSingleton('customer/session')->isLoggedIn()) {
             $customer = Mage::getSingleton('customer/session')->getCustomer();
-//           var_dump($customer->getData('firstname'));
             return $customer->getData('firstname');
         }
     }
@@ -46,7 +45,7 @@ class BlueAcorn_AppTraining_Helper_Data extends Mage_Core_Helper_Abstract {
      * url return
      */
     public function getWelcomeUrl() {
-        return Mage::getBaseUrl().'apptraining/customer/welcome';
+        return Mage::getUrl('apptraining/customer/welcome');
     }
 
     /**
