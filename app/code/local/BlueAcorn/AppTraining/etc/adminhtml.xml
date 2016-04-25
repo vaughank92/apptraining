@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- /**
+ * @package     BlueAcorn\AppTraining
+ * @version
+ * @author      Blue Acorn, Inc. <code@blueacorn.com>
+ * @copyright   Copyright © 2015 Blue Acorn, Inc.
+ */ -->
+<adminhtml>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <blueacorn_apptraining>
+                                        <title>App Training</title>
+                                    </blueacorn_apptraining>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</adminhtml>

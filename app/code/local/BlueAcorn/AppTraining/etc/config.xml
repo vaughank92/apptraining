@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <BlueAcorn_AppTraining>
+            <version>0.1.0</version>
+        </BlueAcorn_AppTraining>
+    </modules>
+
+    <global>
+        <helpers>
+            <blueacorn_apptraining>
+                <class>BlueAcorn_AppTraining_Helper</class>
+            </blueacorn_apptraining>
+        </helpers>
+    </global>
+
+    <frontend>
+        <routers>
+            <blueacorn_apptraining>
+                <use>standard</use>
+                <args>
+                    <module>BlueAcorn_AppTraining</module>
+                    <frontName>apptraining</frontName>
+                </args>
+            </blueacorn_apptraining>
+        </routers>
+
+        <layout>
+            <updates>
+                <blueacorn_apptraining>
+                    <file>blueacorn/apptraining.xml</file>
+                </blueacorn_apptraining>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <blocks>
+            <blueacorn_apptraining>
+                <class>BlueAcorn_AppTraining_Block</class>
+            </blueacorn_apptraining>
+        </blocks>
+    </global>
+
+    <default>
+        <blueacorn_apptraining>
+            <general>
+                <enabled>1</enabled>
+                <page_title>Katie's Custom Page</page_title>
+            </general>
+        </blueacorn_apptraining>
+    </default>
+</config>

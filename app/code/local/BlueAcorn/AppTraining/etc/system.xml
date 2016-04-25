@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!-- /**
+ * @package     BlueAcorn\AppTraining
+ * @version
+ * @author      Blue Acorn, Inc. <code@blueacorn.com>
+ * @copyright   Copyright © 2016 Blue Acorn, Inc.
+ */ -->
+<config>
+    <tabs>
+        <blueacorn translate="label" module="blueacorn_apptraining">
+            <label>Blue Acorn</label>
+            <sort_order>9999</sort_order>
+        </blueacorn>
+    </tabs>
+    <sections>
+        <blueacorn_apptraining>
+            <label>App Training</label>
+            <tab>blueacorn</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <page_title>
+                            <label>Page Title</label>
+                            <frontend_types>text</frontend_types>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </page_title>
+                    </fields>
+                </general>
+            </groups>
+        </blueacorn_apptraining>
+    </sections>
+</config>
