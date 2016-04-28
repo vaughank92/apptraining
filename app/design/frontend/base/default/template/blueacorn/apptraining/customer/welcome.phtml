@@ -1,0 +1,19 @@
+<?php
+/**
+ * @package     BlueAcorn\AppTraining
+ * @version     
+ * @author      Blue Acorn, Inc. <code@blueacorn.com>
+ * @copyright   Copyright © 2016 Blue Acorn, Inc.
+ */
+?>
+<?php $title = Mage::helper('blueacorn_apptraining')->getAppTrainingPageTitle();?>
+
+<div class="page-title">
+    <h1><?php echo $title;?></h1>
+</div>
+
+<div class="welcome-message">
+    <span><?php echo $this->__('Welcome ');?>
+    <?php echo Mage::helper('blueacorn_apptraining')->getCustomerName();?>
+    </span>
+</div>
